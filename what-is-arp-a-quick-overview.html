@@ -3,7 +3,7 @@
 <head>
             <meta charset="utf-8">
         <!-- Site Meta Data -->
-        <title>My First Review</title>
+        <title>What is ARP : A quick overview</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="Arvind Jha">
@@ -28,13 +28,13 @@
         <meta name="twitter:image" content="">
 
     <meta name="twitter:creator" content="">
-    <meta name="twitter:url" content="http://localhost:8000/my-first-review.html">
-    <meta name="twitter:title" content="Arvind Jha ~ My First Review">
-    <meta name="twitter:description" content="Following is a review of my favorite mechanical keyboard.">
+    <meta name="twitter:url" content="http://localhost:8000/what-is-arp-a-quick-overview.html">
+    <meta name="twitter:title" content="Arvind Jha ~ What is ARP : A quick overview">
+    <meta name="twitter:description" content="LAN switches and network interface card fitted on each station understand MAC address. On the other hand, an application running on a station knows the IP address of the party it wishes to communicate with. If two parties, A and B, on the same LAN wish to communicate, they should …">
 
     <!-- Facebook Meta Data -->
-    <meta property="og:title" content="Arvind Jha ~ My First Review"/>
-    <meta property="og:description" content="Following is a review of my favorite mechanical keyboard."/>
+    <meta property="og:title" content="Arvind Jha ~ What is ARP : A quick overview"/>
+    <meta property="og:description" content="LAN switches and network interface card fitted on each station understand MAC address. On the other hand, an application running on a station knows the IP address of the party it wishes to communicate with. If two parties, A and B, on the same LAN wish to communicate, they should …"/>
     <meta property="og:image" content=""/>
 </head>
 
@@ -70,9 +70,9 @@
 <!--
         <h2>Categories</h2>
         <ul class="navbar">
-                <li class="active"><a
-                        href="http://localhost:8000/category/review.html">Review</a></li>
                 <li><a
+                        href="http://localhost:8000/category/review.html">Review</a></li>
+                <li class="active"><a
                         href="http://localhost:8000/category/starting-articals.html">Starting Articals</a></li>
         </ul>
 
@@ -90,18 +90,26 @@
 <article>
     <section id="content">
         <article>
-            <h2 class="post_title post_detail"><a href="http://localhost:8000/my-first-review.html" rel="bookmark"
-                                                  title="Permalink to My First Review">My First Review</a></h2>
+            <h2 class="post_title post_detail"><a href="http://localhost:8000/what-is-arp-a-quick-overview.html" rel="bookmark"
+                                                  title="Permalink to What is ARP : A quick overview">What is ARP : A quick overview</a></h2>
             <div class="entry-content blog-post">
-                <p>Following is a review of my favorite mechanical keyboard.</p>
+                <p>LAN switches and network interface card fitted on each station understand MAC address. On the other hand, an application running on a station knows the IP address of the party it wishes to communicate with. If two parties, A and B, on the same LAN wish to communicate, they should know each other's MAC address also, not just their IP address.</p>
+<p>The Address Resolution Protocol(ARP) is used to resolvean IP address to a MAX address. If A wishes to initiate communication with B, it should know B's address. If it does not, A broadcasts a special ARP query reques frame wherein it poses the following query </p>
+<p>What is B's MAC address ?</p>
+<p>The query is recieved by all nodes on the LAN. If B is live on the LAN, it sends a unicast response to A as follows:</p>
+<p>B's MAC address is 0A:1B:2C:3D:4E:5F:99</p>
+<p>The mapping between B's IP address and its MAC address is then cached at A for future use in its local ARP cache. All entries have an expiry time. So, LANs typically see a fair amoutn of ARP traffic since all the stations need to refresh their expired cache entries.</p>
+<p>There are a number of note worthy features of the ARP protocol. Two of the most relevant (from a security perspective) are as follows.
+ - The ARP request frame also contains the MAC address and the IP address of the sender A. Being a broadcast packet, all stations on the LAN recieve it. On receipt of the query frame, they all update their ARP caches with the MAC address of A.
+ - The ARP protocol permits any station to send or recieve and cache unsolicited ARP replies.</p>
             </div>
             <div class="post_list">
                 <span>By </span>
                 <a href="http://localhost:8000/author/arvind-jha.html">@Arvind Jha</a>
                 <span> in </span>
-                <span class="post_category"><a href="http://localhost:8000/category/review.html" rel="bookmark"
-                                               title="Permalink to Review">[ Review ]</a></span>
-                <span class="post_date">Fri 03 December 2010</span>
+                <span class="post_category"><a href="http://localhost:8000/category/starting-articals.html" rel="bookmark"
+                                               title="Permalink to Starting Articals">[ Starting Articals ]</a></span>
+                <span class="post_date">Wed 18 October 2017</span>
                 <div><span>Tags : </span>
                 </div>
 
@@ -109,28 +117,28 @@
                     <span class="twitter"><a target="_blank" rel="nofollow"
                                              onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"
                                              title="Twitter"
-                                             href="https://twitter.com/share?url=http://localhost:8000/my-first-review.html&text=My First Review&via="><img
+                                             href="https://twitter.com/share?url=http://localhost:8000/what-is-arp-a-quick-overview.html&text=What is ARP : A quick overview&via="><img
                             src="http://localhost:8000/theme/images/icons/twitter-s.png"></a></span>
 
                     <span class="gplus"><a target="_blank" title="Google +"
-                                           href="https://plus.google.com/share?url=http://localhost:8000/my-first-review.html&hl=fr"
+                                           href="https://plus.google.com/share?url=http://localhost:8000/what-is-arp-a-quick-overview.html&hl=fr"
                                            rel="nofollow"
                                            onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
                             src="http://localhost:8000/theme/images/icons/google-s.png"></a></span>
 
                     <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow"
                                               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
-                                              href="https://www.facebook.com/sharer.php?u=http://localhost:8000/my-first-review.html&t=My First Review"><img
+                                              href="https://www.facebook.com/sharer.php?u=http://localhost:8000/what-is-arp-a-quick-overview.html&t=What is ARP : A quick overview"><img
                             src="http://localhost:8000/theme/images/icons/facebook-s.png"></a></span>
 
                     <a target="_blank" title="Linkedin"
-                       href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:8000/my-first-review.html&title=My First Review"
+                       href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:8000/what-is-arp-a-quick-overview.html&title=What is ARP : A quick overview"
                        rel="nofollow"
                        onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
                             src="http://localhost:8000/theme/images/icons/linkedin-s.png"></a>
 
                     <span class="mail"><a
-                            href="mailto:?subject=My First Review&amp;body=Viens découvrir un article à propos de [My First Review] sur le site de Arvind Jha. http://localhost:8000/my-first-review.html"
+                            href="mailto:?subject=What is ARP : A quick overview&amp;body=Viens découvrir un article à propos de [What is ARP : A quick overview] sur le site de Arvind Jha. http://localhost:8000/what-is-arp-a-quick-overview.html"
                             title="Share by Email" target="_blank"><img
                             src="http://localhost:8000/theme/images/icons/mail-s.png"></a></span>
                 </div>
