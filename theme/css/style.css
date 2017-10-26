@@ -99,8 +99,8 @@ article > header {
 
 /* Links */;
 a  { color:#1DAEDF; text-decoration:none; }
-a:visited { color:#1DAEDF; text-decoration:none; }
-a:link { color:#1DAEDF; text-decoration:none; }
+a:visited { color:#585858; text-decoration:none; }
+a:link { color:#B00000; text-decoration:none; }
 a:active { color:#1DAEDF; text-decoration:none; }
 a:hover { text-decoration: underline; }
 
