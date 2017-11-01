@@ -3,7 +3,7 @@
 <head>
             <meta charset="utf-8">
         <!-- Site Meta Data -->
-        <title>What is ARP : A quick overview</title>
+        <title>Web Server vs Application Server</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="Arvind Jha">
@@ -28,13 +28,13 @@
         <meta name="twitter:image" content="">
 
     <meta name="twitter:creator" content="arvindjha683">
-    <meta name="twitter:url" content="https://kodevyas.github.io/what-is-arp-a-quick-overview.html">
-    <meta name="twitter:title" content="Arvind Jha ~ What is ARP : A quick overview">
-    <meta name="twitter:description" content="LAN switches and network interface card fitted on each station understand MAC address. On the other hand, an application running on a station knows the IP address of the party it wishes to communicate with. If two parties, A and B, on the same LAN wish to communicate, they should …">
+    <meta name="twitter:url" content="https://kodevyas.github.io/web-server-vs-application-server.html">
+    <meta name="twitter:title" content="Arvind Jha ~ Web Server vs Application Server">
+    <meta name="twitter:description" content="Most of the times these terms Web Server and Application Server are used interchangeably. Web Server : A Web server handles the HTTP protocol. When the Web server receives an HTTP request, it responds with an HTTP response, such as sending back an HTML page. To process a request, a Web …">
 
     <!-- Facebook Meta Data -->
-    <meta property="og:title" content="Arvind Jha ~ What is ARP : A quick overview"/>
-    <meta property="og:description" content="LAN switches and network interface card fitted on each station understand MAC address. On the other hand, an application running on a station knows the IP address of the party it wishes to communicate with. If two parties, A and B, on the same LAN wish to communicate, they should …"/>
+    <meta property="og:title" content="Arvind Jha ~ Web Server vs Application Server"/>
+    <meta property="og:description" content="Most of the times these terms Web Server and Application Server are used interchangeably. Web Server : A Web server handles the HTTP protocol. When the Web server receives an HTTP request, it responds with an HTTP response, such as sending back an HTML page. To process a request, a Web …"/>
     <meta property="og:image" content=""/>
 </head>
 
@@ -81,9 +81,9 @@
 
         <h2>Categories</h2>
         <ul class="navbar">
-                <li><a
-                        href="https://kodevyas.github.io/category/devops.html">DevOps</a></li>
                 <li class="active"><a
+                        href="https://kodevyas.github.io/category/devops.html">DevOps</a></li>
+                <li><a
                         href="https://kodevyas.github.io/category/starting-articals.html">Starting Articals</a></li>
         </ul>
 
@@ -114,38 +114,37 @@
 <article>
     <section id="content">
         <article>
-            <h2 class="post_title post_detail"><a href="https://kodevyas.github.io/what-is-arp-a-quick-overview.html" rel="bookmark"
-                                                  title="Permalink to What is ARP : A quick overview">What is ARP : A quick overview</a></h2>
+            <h2 class="post_title post_detail"><a href="https://kodevyas.github.io/web-server-vs-application-server.html" rel="bookmark"
+                                                  title="Permalink to Web Server vs Application Server">Web Server vs Application Server</a></h2>
             <div class="entry-content blog-post">
-                <p>LAN switches and network interface card fitted on each station understand MAC address. On the other hand, an application running on a station knows the IP address of the party it wishes to communicate with. If two parties, A and B, on the same LAN wish to communicate, they should know each other's MAC address also, not just their IP address.</p>
-<p>The Address Resolution Protocol(ARP) is used to resolvean IP address to a MAX address. If A wishes to initiate communication with B, it should know B's address. If it does not, A broadcasts a special ARP query reques frame wherein it poses the following query </p>
+                <p>Most of the times these terms Web Server and Application Server are used interchangeably.</p>
+<p><strong>Web Server</strong> :</p>
 <blockquote>
+<p>A Web server handles the HTTP protocol. When the Web server receives an HTTP request, it responds with an HTTP response, such as sending back an HTML page. To process a request, a Web server may respond with a static HTML page or image, send a redirect, or delegate the dynamic response generation to some other program such as CGI scripts, JSPs (JavaServer Pages), servlets, ASPs (Active Server Pages), server-side JavaScripts, or some other server-side technology. Whatever their purpose, such server-side programs generate a response, most often in HTML, for viewing in a Web browser. </p>
+<p>Understand that a Web server's delegation model is fairly simple. When a request comes into the Web server, the Web server simply passes the request to the program best able to handle it. The Web server doesn't provide any functionality beyond simply providing an environment in which the server-side program can execute and pass back the generated responses. The server-side program usually provides for itself such functions as transaction processing, database connectivity, and messaging.</p>
+<p>While a Web server may not itself support transactions or database connection pooling, it may employ various strategies for fault tolerance and scalability such as load balancing, caching, and clustering—features oftentimes erroneously assigned as features reserved only for application servers. </p>
+</blockquote>
+<p><strong>Application Server</strong> :</p>
 <blockquote>
-<blockquote>
-<p><em>What is B's MAC address ?</em></p>
+<p>An application server is a component-based product that resides in the middle-tier of a server centric architecture. It provides middleware services for security and state maintenance, along with data access and persistence.
+An application server exposes business logic to client applications through various protocols, possibly including HTTP. While a Web server mainly deals with sending HTML for display in a Web browser, an application server provides access to business logic for use by client application programs. The application program can use this logic just as it would call a method on an object (or a function in the procedural world). </p>
 </blockquote>
-</blockquote>
-</blockquote>
-<p>The query is recieved by all nodes on the LAN. If B is live on the LAN, it sends a unicast response to A as follows:</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p><em>B's MAC address is 0A:1B:2C:3D:4E:5F:99</em></p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>The mapping between B's IP address and its MAC address is then cached at A for future use in its local ARP cache. All entries have an expiry time. So, LANs typically see a fair amoutn of ARP traffic since all the stations need to refresh their expired cache entries.</p>
-<p>There are a number of note worthy features of the ARP protocol. Two of the most relevant (from a security perspective) are as follows.
- - The ARP request frame also contains the MAC address and the IP address of the sender A. Being a broadcast packet, all stations on the LAN recieve it. On receipt of the query frame, they all update their ARP caches with the MAC address of A.
- - The ARP protocol permits any station to send or recieve and cache unsolicited ARP replies.</p>
+<p>Following are some of the key differences in features of Web Server and Application Server:</p>
+<ul>
+<li>Web Server is designed to serve HTTP Content. App Server can also serve HTTP Content but is not limited to just HTTP. It can be provided other protocol support such as RMI/RPC</li>
+<li>Web Server is mostly designed to serve static content, though most Web Servers have plugins to support scripting languages like Perl, PHP, ASP, JSP etc. through which these servers can generate dynamic HTTP content. </li>
+<li>Most of the application servers have Web Server as integral part of them, that means App Server can do whatever Web Server is capable of. Additionally App Server have components and features to support Application level services such as Connection Pooling, Object Pooling, Transaction Support, Messaging services etc.
+*As web servers are well suited for static content and app servers for dynamic content, most of the production environments have web server acting as reverse proxy to app server. That means while servicing a page request, static contents (such as images/Static HTML) are served by web server that interprets the request. Using some kind of filtering technique (mostly extension of requested resource) web server identifies dynamic content request and transparently forwards to app server.</li>
+</ul>
+<p>Example of such configuration is Apache Tomcat HTTP Server and Nginx server. Apache Tomcat HTTP Server is Web Server and Nginx server is Application Server.</p>
             </div>
             <div class="post_list">
                 <span>By </span>
                 <a href="https://kodevyas.github.io/author/arvind-jha.html">@Arvind Jha</a>
                 <span> in </span>
-                <span class="post_category"><a href="https://kodevyas.github.io/category/starting-articals.html" rel="bookmark"
-                                               title="Permalink to Starting Articals">[ Starting Articals ]</a></span>
-                <span class="post_date">Wed 18 October 2017</span>
+                <span class="post_category"><a href="https://kodevyas.github.io/category/devops.html" rel="bookmark"
+                                               title="Permalink to DevOps">[ DevOps ]</a></span>
+                <span class="post_date">Thu 02 November 2017</span>
                 <div><span>Tags : </span>
                 </div>
 
@@ -153,28 +152,28 @@
                     <span class="twitter"><a target="_blank" rel="nofollow"
                                              onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"
                                              title="Twitter"
-                                             href="https://twitter.com/share?url=https://kodevyas.github.io/what-is-arp-a-quick-overview.html&text=What is ARP : A quick overview&via=arvindjha683"><img
+                                             href="https://twitter.com/share?url=https://kodevyas.github.io/web-server-vs-application-server.html&text=Web Server vs Application Server&via=arvindjha683"><img
                             src="https://kodevyas.github.io/theme/images/icons/twitter-s.png"></a></span>
 
                     <span class="gplus"><a target="_blank" title="Google +"
-                                           href="https://plus.google.com/share?url=https://kodevyas.github.io/what-is-arp-a-quick-overview.html&hl=fr"
+                                           href="https://plus.google.com/share?url=https://kodevyas.github.io/web-server-vs-application-server.html&hl=fr"
                                            rel="nofollow"
                                            onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
                             src="https://kodevyas.github.io/theme/images/icons/google-s.png"></a></span>
 
                     <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow"
                                               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
-                                              href="https://www.facebook.com/sharer.php?u=https://kodevyas.github.io/what-is-arp-a-quick-overview.html&t=What is ARP : A quick overview"><img
+                                              href="https://www.facebook.com/sharer.php?u=https://kodevyas.github.io/web-server-vs-application-server.html&t=Web Server vs Application Server"><img
                             src="https://kodevyas.github.io/theme/images/icons/facebook-s.png"></a></span>
 
                     <a target="_blank" title="Linkedin"
-                       href="https://www.linkedin.com/shareArticle?mini=true&url=https://kodevyas.github.io/what-is-arp-a-quick-overview.html&title=What is ARP : A quick overview"
+                       href="https://www.linkedin.com/shareArticle?mini=true&url=https://kodevyas.github.io/web-server-vs-application-server.html&title=Web Server vs Application Server"
                        rel="nofollow"
                        onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
                             src="https://kodevyas.github.io/theme/images/icons/linkedin-s.png"></a>
 
                     <span class="mail"><a
-                            href="mailto:?subject=What is ARP : A quick overview&amp;body=Viens découvrir un article à propos de [What is ARP : A quick overview] sur le site de Arvind Jha. https://kodevyas.github.io/what-is-arp-a-quick-overview.html"
+                            href="mailto:?subject=Web Server vs Application Server&amp;body=Viens découvrir un article à propos de [Web Server vs Application Server] sur le site de Arvind Jha. https://kodevyas.github.io/web-server-vs-application-server.html"
                             title="Share by Email" target="_blank"><img
                             src="https://kodevyas.github.io/theme/images/icons/mail-s.png"></a></span>
                 </div>
